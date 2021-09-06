@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614441331_16-p-temnii-fon-dlya-chata-19.png");
+  background-position: center;
 }
 
 code {
