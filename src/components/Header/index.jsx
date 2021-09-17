@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
-import '../../styles/style.css';
+import './style.css';
 
 export default class Header extends React.Component {
     static propTypes = {
@@ -26,11 +26,10 @@ export default class Header extends React.Component {
                                 {profile.lastName.charAt(0)}
                             </Avatar>
                             <div>
-                                {profile.firstName} {profile.lastName.charAt(0)}.
+                                {profile.firstName}
                             </div>
                         </div>
                     </Link>
-                    <Link to='/'>Назад</Link>
                 </div>
                 <div className='header-title'>{title}</div>
             </div>

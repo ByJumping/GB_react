@@ -1,10 +1,10 @@
 import React from 'react';
-import Message from '../Message/Message';
+import Message from '../../containers/Message';
 import TextField from '@material-ui/core/TextField';
 import SendIcon from '@material-ui/icons/Send';
 import Fab from '@material-ui/core/Fab';
 import PropTypes from 'prop-types';
-import '../../styles/style.css';
+import './style.css';
 
 export default class MessageField extends React.Component {
     static propTypes = {
@@ -37,7 +37,8 @@ export default class MessageField extends React.Component {
         }
 
         const { chatId, messages } = this.props;
-        const messageId = Object.keys(messages).length + 1;
+        const lastMessageId = Number(Object.keys(messages).pop());
+        const messageId = lastMessageId + 1;
 
         this.props.sendMessage({
             messageId,
@@ -49,18 +50,6 @@ export default class MessageField extends React.Component {
         this.setState({
             input: ''
         });
-
-        setTimeout(() => {
-            const { messages } = this.props;
-            const messageId = Object.keys(messages).length + 1;
-
-            this.props.sendMessage({
-                messageId,
-                chatId,
-                text: 'Я робот!',
-                sender: 'bot'
-            });
-        }, 1000);
     };
 
     handleChangeInput = ({ target: { value } }) => {
@@ -78,12 +67,14 @@ export default class MessageField extends React.Component {
     render() {
         const { chats, messages, chatId } = this.props;
 
-        const messageElements = chats[chatId].messageList.map((messageId) => {
+        const messageElements = chats[chatId]?.messageList.map((messageId) => {
             const { text, sender } = messages[messageId];
 
             return (
                 <Message
                     key={messageId}
+                    chatId={chatId}
+                    messageId={messageId}
                     text={text}
                     sender={sender} />
             )

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Header from '../../containers/Header';
 import ChatList from '../../containers/ChatList';
-import '../../styles/style.css';
+import './styles.css';
 
 export default class Layout extends React.Component {
     static propTypes = {
@@ -13,7 +13,7 @@ export default class Layout extends React.Component {
     };
 
     render() {
-        const { chatId, children, title } = this.props;
+        const { children, title, chatId } = this.props;
 
         return (
             <Container className="layout">

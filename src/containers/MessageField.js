@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { sendMessage } from '../actions/messageActions';
-import MessageField from '../components/MessageField/MessageField';
+import MessageField from '../components/MessageField';
 
 const mapStateToProps = (store) => {
     return {
