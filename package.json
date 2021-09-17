@@ -1,7 +1,7 @@
 {
     "name": "mesengerreact",
     "version": "1.0.0",
-    "description": "ReactJS. Базовый курс • 05.04.2021",
+    "description": "ReactJS",
     "main": "index.js",
     "scripts": {
         "build": "webpack --mode production",
@@ -10,15 +10,10 @@
         "eslint": "eslint --init"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/A-Alexander-S/react-05-04-2021.git"
+        "type": "git"
     },
     "author": "",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/A-Alexander-S/react-05-04-2021/issues"
-    },
-    "homepage": "https://github.com/A-Alexander-S/react-05-04-2021#readme",
     "devDependencies": {
         "@babel/core": "^7.13.14",
         "@babel/plugin-proposal-class-properties": "^7.13.0",

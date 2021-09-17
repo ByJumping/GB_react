@@ -1,6 +1,6 @@
 const initialStore = {
-    firstName: 'Alexander',
-    lastName: 'Akimov'
+    firstName: 'Ivanov',
+    lastName: 'Ivanov'
 };
 
 
