@@ -13,7 +13,7 @@ ReactDom.render(
     <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
             <ConnectedRouter history={history}>
-                <Router />
+                <Router/>
             </ConnectedRouter>
         </PersistGate>
     </Provider>,

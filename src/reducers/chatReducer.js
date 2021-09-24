@@ -1,7 +1,8 @@
-import { DELETE_MESSAGE, SEND_MESSAGE } from '../actions/messageActions';
-
 import {
-    ADD_CHAT,
+    DELETE_CHAT_REQUEST,
+    DELETE_CHAT_SUCCESS,
+    ADD_CHAT_REQUEST,
+    ADD_CHAT_SUCCESS,
     MARK_CHAT_UNREAD,
     MARK_CHAT_READ,
     LOAD_CHATS_REQUEST,
@@ -11,36 +12,52 @@ import {
 
 const initialStore = {
     chats: {},
-    isLoading: false
+    isLoading: false,
+    isLoaded: false,
+    isAdding: false
 };
 
 export default function chatReducer(store = initialStore, action) {
     switch (action.type) {
-        case SEND_MESSAGE: {
-            const { chatId, messageId } = action;
-
+        case DELETE_CHAT_REQUEST: {
             return {
+                ...store,
                 chats: {
                     ...store.chats,
-                    [chatId]: {
-                        ...store.chats[chatId],
-                        messageList: [
-                            ...store.chats[chatId].messageList,
-                            messageId
-                        ]
+                    [action.payload.id]: {
+                        ...store.chats[action.payload.id],
+                        isDeleting: true
                     }
-                },
+                }
             };
         }
-        case ADD_CHAT: {
-            const chatId = Object.keys(store.chats).length + 1;
+        case DELETE_CHAT_SUCCESS: {
+            const { chats } = store;
+            const newChats = { ...chats };
+
+            delete newChats[action.payload.id];
 
             return {
+                ...store,
+                chats: newChats
+            };
+        }
+        case ADD_CHAT_REQUEST: {
+            return {
+                ...store,
+                isAdding: true
+            };
+        }
+        case ADD_CHAT_SUCCESS: {
+            const { id, title } = action.payload;
+
+            return {
+                ...store,
+                isAdding: false,
                 chats: {
                     ...store.chats,
-                    [chatId]: {
-                        title: action.title,
-                        messageList: []
+                    [id]: {
+                        title: title
                     }
                 },
             };
@@ -73,22 +90,6 @@ export default function chatReducer(store = initialStore, action) {
                 }
             }
         }
-        case DELETE_MESSAGE: {
-            const { messageId, chatId } = action;
-            const messageList = store.chats[chatId].messageList;
-            const newMessageList = messageList.filter((mId) => mId !== messageId);
-
-            return {
-                ...store,
-                chats: {
-                    ...store.chats,
-                    [chatId]: {
-                        ...store.chats[chatId],
-                        messageList: newMessageList
-                    }
-                }
-            }
-        }
         case LOAD_CHATS_REQUEST: {
             return {
                 ...store,
@@ -102,12 +103,13 @@ export default function chatReducer(store = initialStore, action) {
             };
         }
         case LOAD_CHATS_SUCCESS: {
-            const { chats } = action.payload.entities;
+            const { chats = {} } = action.payload.entities;
 
             return {
                 ...store,
                 chats,
-                isLoading: false
+                isLoading: false,
+                isLoaded: true
             };
         }
         default:

@@ -22,16 +22,16 @@ export default class Header extends React.Component {
                     <Link to='/profile'>
                         <div className='header-profile-container'>
                             <Avatar className='header-profile-avatar'>
-                                {profile.firstName.charAt(0)}
-                                {profile.lastName.charAt(0)}
+                                { profile.firstName.charAt(0) }
+                                { profile.lastName.charAt(0) }
                             </Avatar>
                             <div>
-                                {profile.firstName}
+                                { profile.firstName }
                             </div>
                         </div>
                     </Link>
                 </div>
-                <div className='header-title'>{title}</div>
+                <div className='header-title'>{ title }</div>
             </div>
         );
     }

@@ -1,6 +1,8 @@
 const initialStore = {
-    firstName: 'Ivanov',
-    lastName: 'Ivanov'
+    firstName: 'Евгений',
+    lastName: 'Пашков',
+    phone: '8 950 048 67 53',
+    mail:'pashkoveval@gmail.com'
 };
 
 

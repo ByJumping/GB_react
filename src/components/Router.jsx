@@ -6,30 +6,35 @@ import MessageField from '../containers/MessageField';
 import Profile from '../containers/Profile';
 import { CHAT_PATTERN } from '../constants';
 
-
 export default class Router extends React.Component {
     static propTypes = {
-        chats: PropTypes.object.isRequired
+        chats: PropTypes.object.isRequired,
+        isLoaded: PropTypes.bool
     };
     render() {
         return (
             <Switch>
                 <Route exact path='/' render={() => (
-                    <Redirect to='/profile' />
+                    <Redirect to='/profile'/>
                 )} />
                 <Route path={CHAT_PATTERN} render={(props) => {
                     const chatId = props.match.params.id;
+                    const { chats, isLoaded } = this.props;
+
+                    if (isLoaded && !chats[chatId]) {
+                        return <Redirect to='/profile' />;
+                    }
 
                     return (
                         <Layout
-                            title={`Messages: ${this.props.chats[chatId]?.title}`}
+                            title={`Общение с : ${this.props.chats[chatId]?.title || ''}`}
                             chatId={chatId}>
                             <MessageField chatId={chatId} />
                         </Layout>
                     );
-                }} />
+                }}/>
                 <Route path='/profile' render={() => (
-                    <Layout title='Profile Page'>
+                    <Layout title='Профиль'>
                         <Profile />
                     </Layout>
                 )} />
