@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffcb497f-d221-4051-a119-fb9f5ee1abe9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBar/ChatPreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBar/ChatPreview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auth/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auth/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cats/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cats/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cats/catSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cats/catSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cats/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cats/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/MessageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/MessageInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/MessageList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/chatSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/chatSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/CustomRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CustomRoute.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ym4HxXbs0THMrRKBqMy9P9UxeE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffcb497f-d221-4051-a119-fb9f5ee1abe9" name="Changes" comment="" />
+      <created>1632843345780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632843345780</updated>
+      <workItem from="1632843347040" duration="313000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
